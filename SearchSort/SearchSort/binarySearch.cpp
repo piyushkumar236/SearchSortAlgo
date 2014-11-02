@@ -7,7 +7,7 @@ int binarySearchRecursive(int* arr, int l, int h, int key)
 	if (h == l) 
 	{
 		if (key == arr[h]) { cout << "\tInfo: Element is present at location : " << h <<endl;  return h;  }
-		else               { cout <<"\tErr: Element is not present in the array!" << endl;     return -1; }
+		else               { cout <<"\tErr : Element is not present in the array!" << endl;     return -1; }
 	}
 	else 
 	{
@@ -22,7 +22,8 @@ int binarySearch(int* arr, int arr_size, int key)
 {
 	cout << "Binary Search Called for Value : " << key <<endl;
 
-	binarySearchRecursive(arr, 0, (arr_size-1), key);
+	int pos = binarySearchRecursive(arr, 0, (arr_size-1), key);
 	
-	return 0;
+	cout << endl;
+	return pos;
 }

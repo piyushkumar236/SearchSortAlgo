@@ -11,10 +11,15 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int marr[ARRAY_SIZE];
+
 	for (int i = 0;i < ARRAY_SIZE; i++) { marr[i] = unsortedArray[i];}
-	binarySearch(marr, ARRAY_SIZE, 3);
+	selectionSort(marr, ARRAY_SIZE);
 	
-	
+	//The sorted array is given as an input to Binary Search.
+	binarySearch(marr, ARRAY_SIZE, 20);
+
+
+
 	getch();
 	return 0;
 }
