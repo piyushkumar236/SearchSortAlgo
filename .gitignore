@@ -33,4 +33,5 @@ ipch/
 *.ncb
 *.opensdf
 *.sdf
+*.suo
 *.cachefile
