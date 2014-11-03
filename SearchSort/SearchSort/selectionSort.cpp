@@ -2,12 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void swap(int* pval1, int* pval2) 
-{
-	*pval1 = (*pval1)^(*pval2);
-	*pval2 = (*pval1)^(*pval2);
-	*pval1 = (*pval1)^(*pval2);
-}
+#include "searchsort_accessories.h"
 
 void selectionSort(int* arr, int arr_size) 
 {

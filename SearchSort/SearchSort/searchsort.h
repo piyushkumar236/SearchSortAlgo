@@ -6,6 +6,8 @@
 	int sortedArray[ARRAY_SIZE] =   {0,1,1,1,2,2,3,3,4,5,6,7,8,9,15};
 	int binarySearch(int* arr, int arr_size, int key);
 	void selectionSort(int* arr, int arr_size);
+	void bubbleSort(int* arr, int arr_size);
+	void insertionSort(int* arr, int arr_size);
 	//void binarySearch();
 
 #endif

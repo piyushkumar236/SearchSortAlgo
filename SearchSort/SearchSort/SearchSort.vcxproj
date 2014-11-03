@@ -76,12 +76,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="searchsort.h" />
+    <ClInclude Include="searchsort_accessories.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="binarySearch.cpp" />
+    <ClCompile Include="bubbleSort.cpp" />
+    <ClCompile Include="insertionSort.cpp" />
     <ClCompile Include="SearchSort.cpp" />
+    <ClCompile Include="searchsort_accessories.cpp" />
     <ClCompile Include="selectionSort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+#include "searchsort_accessories.h"
+
 int binarySearchRecursive(int* arr, int l, int h, int key)
 {
 	if (h == l) 

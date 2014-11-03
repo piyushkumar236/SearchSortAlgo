@@ -1,18 +1,17 @@
-﻿Build started 11/2/2014 7:16:54 PM.
+﻿Build started 11/3/2014 7:49:04 PM.
      1>Project "C:\Users\piyushk\Desktop\Github\SearchSortAlgo\SearchSort\SearchSort\SearchSort.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\SearchSort.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SearchSort.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SearchSort.cpp selectionSort.cpp
-         selectionSort.cpp
-         SearchSort.cpp
-     1>c:\users\piyushk\desktop\github\searchsortalgo\searchsort\searchsort\searchsort.cpp(23): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SearchSort.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt insertionSort.cpp
+         insertionSort.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\piyushk\Desktop\Github\SearchSortAlgo\SearchSort\Debug\SearchSort.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SearchSort.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\piyushk\Desktop\Github\SearchSortAlgo\SearchSort\Debug\SearchSort.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\piyushk\Desktop\Github\SearchSortAlgo\SearchSort\Debug\SearchSort.lib" /MACHINE:X86 Debug\binarySearch.obj
+         Debug\bubbleSort.obj
+         Debug\insertionSort.obj
          Debug\SearchSort.obj
+         Debug\searchsort_accessories.obj
          Debug\selectionSort.obj
          Debug\stdafx.obj
      1>binarySearch.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
@@ -26,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.95
+Time Elapsed 00:00:04.79
