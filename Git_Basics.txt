@@ -1,0 +1,104 @@
+Getting Started with Git.
+
+git config --global user.name "piyushkumar236"
+git config --global user.email "piyushvit2007@gmail.com"
+git clone https://github.com/piyushkumar236/TestGitHub.git [one time activity]
+
+git status
+git add README.md
+git commit -m "Updated the README.md file for better description"
+git log
+git status
+
+git remote add origin https://github.com/piyushkumar236/TestGitHub.git
+git push -u origin master			
+
+
+
+Undo git add : 	git rm --cached <added_file_to_undo>			<check git status before and after this command to see the difference>
+
+
+
+Adding or Committing a directory is same as commiting a file.
+git add directory_name 	<However, if some problem is there even in one file while adding as "Permission Denied", it will not add the entire directory>
+git commit -m ""
+
+1. Open Git shell.
+	Windows PowerShell
+	Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+	
+	C:\Users\piyushk> git config --global user.name "piyushkumar236"
+	C:\Users\piyushk> git config --global user.email "piyushvit2007@gmail.com"
+	
+2.	Go to the website. Create Repositories. Ignore means you can ignore changes made by friends.
+	
+	HTTPS clone url - 	https://github.com/piyushkumar236/TestGitHub.git
+	
+3. 	Go to the Git Shell.
+	cd .\Desktop
+	git clone https://github.com/piyushkumar236/TestGitHub.git
+	clear
+	cd TestGitHub
+	vi README.md ( or open this file using notepad++)
+	edit the file and now, if we want to upload the file to the same in the server.
+
+4.	Check the status of the file.
+
+		C:\Users\piyushk\Desktop\TestGitHub [master +0 ~1 -0]> git status
+		On branch master
+		Your branch is up-to-date with 'origin/master'.
+		
+		Changes not staged for commit:
+		(use "git add <file>..." to update what will be committed)
+		(use "git checkout -- <file>..." to discard changes in working directory)
+		
+				modified:   README.md
+				
+		no changes added to commit (use "git add" and/or "git commit -a")
+		C:\Users\piyushk\Desktop\TestGitHub [master +0 ~1 -0]>
+
+** git push -help, git commit -help ...		
+		
+5.			
+		git add README.md
+		git commit -m "Updated the README.md file for better description"
+		git log
+		git status
+			C:\Users\piyushk\Desktop\TestGitHub [master]> git status
+			On branch master
+			Your branch is ahead of 'origin/master' by 1 commit.
+			(use "git push" to publish your local commits)
+			
+			nothing to commit, working directory clean				>>nothign to commit, means all the local changes are  already committed.
+			C:\Users\piyushk\Desktop\TestGitHub [master]>
+			
+		git remote add origin https://github.com/piyushkumar236/TestGitHub.git	(step not required, if we have cloned the respository to local directory)
+		git status
+		git push -u origin master			<<< pushing to main branch ( master)
+			provide username and password (if asked for)
+		
+		The file with the changes is pushed to the central repository.
+		
+6. 	If we have to add a new file from a local directory in our desktop to the central repository.
+		create a file and edit it(using vi or notepad++)
+		git status
+			C:\Users\piyushk\Desktop\TestGitHub [master +1 ~0 -0 !]> git status
+			On branch master
+			Your branch is up-to-date with 'origin/master'.
+			
+			Untracked files:
+			(use "git add <file>..." to include in what will be committed)
+			
+					testfile.txt
+			
+			nothing added to commit but untracked files present (use "git add" to track)			
+			C:\Users\piyushk\Desktop\TestGitHub [master +1 ~0 -0 !]>
+		
+		git add .		>> for files that are not being tracked.
+		git commit -m "adding new file to repository."
+		git status
+		git push				(since we have already done git push -u origin master, hence not requried again)
+		
+7.	To get the new files, which might have been uploaded by other people.
+		git pull origin master
+		
